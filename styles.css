@@ -1,0 +1,4 @@
+html, body, main {
+    overflow: auto !important;
+    overflow-y: unset !important;
+}

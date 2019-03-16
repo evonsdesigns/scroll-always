@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Scroll Always",
+    "description": "Always show scrollbar even when webpages hide it.",
+    "version": "1.0.0",
+    "author": "Evonsdesigns",
+    "content_scripts": [{
+         "matches": ["*://*/*"],
+        "css": ["styles.css"],
+         "run_at": "document_end"
+    }],
+    "browser_action": {
+        "default_popup": "options.html"
+    },
+    "permissions": ["activeTab"]
+}
